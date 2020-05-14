@@ -54,6 +54,7 @@ const previosMonthButton = document.querySelector('#previosMonthButton');
 
 const calendar = new Calendar(calendarTable);
 
+calendarHeaderTitle.innerText = calendar.date.toLocaleString('pt-BR', { month:'long', year:'numeric' });
 calendar.render();
 
 function nextMonth() {
